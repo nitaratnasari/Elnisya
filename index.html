@@ -1,585 +1,1447 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T9WHVPCV');</script>
-<!-- End Google Tag Manager -->
-    
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T9WHVPCV');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ELNISYA TRANS - Travel Premium Terpercaya Pangandaran & Tasikmalaya. Layanan Door to Door, Armada Mewah, Sopir Profesional, Harga Terjamin.">
-    <meta name="author" content="Elnisya Trans">
-    <title>ELNISYA TRANS - Travel Premium & Sewa Mobil</title>
-    <link rel="icon" href="logo-elnisya.png">
+    <meta name="description"
+        content="ELNISYA TRANS - Travel Premium Pangandaran & Tasikmalaya ke seluruh Jawa Barat & Jabodetabek. Armada mobil terbaru, layanan door to door, paket wisata lengkap.">
+    <meta name="keywords"
+        content="ELNISYA TRANS, Travel Pangandaran Jakarta, Travel Tasikmalaya Bandung, Sewa mobil Pangandaran, Wisata Citumang Green Canyon">
+    <meta name="author" content="ELNISYA TRANS">
+    <title>ELNISYA TRANS - Premium Travel & Wisata Terpercaya</title>
+    <link rel="icon" href="./logo-elnisya.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
-        :root {
-            --utama: #0F172A;
-            --sekunder: #1E293B;
-            --aksen: #F59E0B;
-            --aksen-gelap: #D97706;
-            --hijau: #10B981;
-            --merah: #EF4444;
-            --putih: #FFFFFF;
-            --abu-terang: #F1F5F9;
-            --abu: #94A3B8;
-            --bayangan: 0 20px 60px rgba(0,0,0,0.12);
-            --radius: 20px;
-            --transisi: all 0.3s ease;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-        html {scroll-behavior: smooth; scroll-padding-top: 90px;}
-        body {color: var(--utama); background: var(--putih); line-height: 1.7; font-size: 16px; font-weight: 400;}
-        .container {width: 92%; max-width: 1280px; margin: 0 auto;}
 
-        /* TOMBOL UMUM */
-        .btn-utama {display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: linear-gradient(135deg, var(--aksen), var(--aksen-gelap)); color: var(--putih); text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 15px; transition: var(--transisi); box-shadow: 0 8px 25px rgba(245,158,11,0.35); border: none; cursor: pointer;}
-        .btn-utama:hover {transform: translateY(-3px); box-shadow: 0 12px 35px rgba(245,158,11,0.45);}
-        .btn-kedua {display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: transparent; color: var(--putih); border: 2px solid var(--putih); text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 15px; transition: var(--transisi);}
-        .btn-kedua:hover {background: var(--putih); color: var(--utama);}
-        .btn-kecil {padding: 10px 20px; font-size: 14px; border-radius: 12px;}
+        :root {
+            --utama: #FF8A00;
+            /* Oranye Emas Premium */
+            --utama-gelap: #E67A00;
+            --aksen: #FFC107;
+            --gelap: #1A1A2E;
+            --abu-gelap: #16213E;
+            --terang: #FFFFFF;
+            --abu-muda: #F8F9FA;
+            --abu: #6C757D;
+            --sukses: #10B981;
+            --bayangan: 0 20px 50px rgba(255, 138, 0, 0.18);
+            --radius: 24px;
+            --transisi: all 0.4s ease;
+        }
 
-        /* JUDUL BAGIAN */
-        .judul-bagian {text-align: center; margin-bottom: 50px;}
-        .label-bagian {display: inline-block; background: rgba(245,158,11,0.1); color: var(--aksen-gelap); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 600; margin-bottom: 12px;}
-        .judul-bagian h2 {font-size: 36px; font-weight: 800; color: var(--utama); margin-bottom: 12px;}
-        .judul-bagian p {font-size: 15px; color: var(--abu); max-width: 600px; margin: 0 auto;}
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
 
-        /* NAVIGASI PREMIUM */
-        nav {background: rgba(15,23,42,0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 999; border-bottom: 1px solid rgba(255,255,255,0.1);}
-        .nav-bungkus {display: flex; justify-content: space-between; align-items: center; padding: 15px 0;}
-        .logo {display: flex; align-items: center; gap: 12px; text-decoration: none;}
-        .logo-img {height: 55px; width: auto;}
-        .logo-teks {line-height: 1.2;}
-        .logo-nama {font-size: 22px; font-weight: 800; color: var(--putih); letter-spacing: 0.5px;}
-        .logo-tag {font-size: 11px; color: var(--aksen); font-weight: 500; text-transform: uppercase; letter-spacing: 1px;}
-        .menu-nav {display: flex; gap: 28px; list-style: none; align-items: center;}
-        .menu-nav a {text-decoration: none; color: rgba(255,255,255,0.8); font-weight: 500; font-size: 14px; transition: var(--transisi); position: relative;}
-        .menu-nav a:hover, .menu-nav a.aktif {color: var(--aksen);}
-        .menu-nav a::after {content: ''; width: 0; height: 2px; background: var(--aksen); position: absolute; bottom: -6px; left: 0; transition: var(--transisi);}
-        .menu-nav a:hover::after, .menu-nav a.aktif::after {width: 100%;}
-        .menu-hp {display: none; font-size: 28px; color: var(--putih); cursor: pointer;}
+        body {
+            color: var(--gelap);
+            background: var(--terang);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .container {
+            width: 93%;
+            max-width: 1450px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transisi);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* TOMBOL PREMIUM */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 34px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transisi);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+            transition: 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-utama {
+            background: linear-gradient(135deg, var(--utama), var(--utama-gelap));
+            color: var(--terang);
+            box-shadow: 0 10px 30px rgba(255, 138, 0, 0.35);
+        }
+
+        .btn-utama:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 138, 0, 0.45);
+        }
+
+        .btn-aksen {
+            background: linear-gradient(135deg, var(--aksen), #FFB300);
+            color: var(--gelap);
+            box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
+        }
+
+        .btn-aksen:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-putih {
+            background: var(--terang);
+            color: var(--utama);
+            border: 2px solid var(--utama);
+            font-weight: 600;
+        }
+
+        .btn-putih:hover {
+            background: var(--utama);
+            color: var(--terang);
+            border-color: transparent;
+        }
+
+        /* BAR ATAS INFORMASI */
+        .top-bar {
+            background: var(--gelap);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 12px 0;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 138, 0, 0.2);
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .top-kiri,
+        .top-kanan {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .top-kiri span,
+        .top-kanan span {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-bar a {
+            color: var(--aksen);
+            font-weight: 700;
+        }
+
+        .badge-resmi {
+            background: var(--sukses);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .nama-pemilik {
+            color: var(--aksen);
+            font-weight: 700;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .nav-bungkus {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-img {
+            height: 65px;
+            width: auto;
+        }
+
+        .logo-teks h1 {
+            font-size: 28px;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--utama), var(--aksen));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-teks p {
+            font-size: 11px;
+            color: var(--abu);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .menu-utama {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .menu-utama li a {
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 0;
+            position: relative;
+            color: var(--gelap);
+        }
+
+        .menu-utama li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: var(--utama);
+            transition: var(--transisi);
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .menu-utama li a:hover::after,
+        .menu-utama li a.aktif::after {
+            width: 100%;
+        }
+
+        .menu-hp {
+            display: none;
+            font-size: 35px;
+            color: var(--utama);
+            cursor: pointer;
+        }
 
         /* BANNER UTAMA */
-        .bagian-banner {background-size: contain !important; background-repeat: repeat !important; width: 100%; min-height: 100vh; margin-top: -70px; padding-top: 70px; background: linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.85)), url('banner-premium.jpg') center/cover no-repeat; display: flex; align-items: center; color: var(--putih); text-align: center;}
-        .isi-banner {max-width: 900px; margin: 0 auto;}
-        .isi-banner h1 {font-size: 52px; font-weight: 800; line-height: 1.2; margin-bottom: 20px;}
-        .isi-banner h1 span {color: var(--aksen);}
-        .isi-banner p {font-size: 18px; font-weight: 300; margin-bottom: 35px; color: rgba(255,255,255,0.9);}
-        .tombol-banner {display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;}
+        .banner {
+            width: 100%;
+            min-height: 92vh;
+            background: linear-gradient(105deg, rgba(26, 26, 46, 0.85) 0%, rgba(255, 138, 0, 0.4) 100%), url('banner-mobil-premium.jpg') center/100% repeat fixed;
+            display: flex;
+            align-items: center;
+            color: var(--terang);
+        }
 
-        /* KEUNGGULAN PREMIUM */
-        .bagian-keunggulan {padding: 80px 0; background: var(--abu-terang);}
-        .grid-keunggulan {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 25px;}
-        .kotak-keunggulan {background: var(--putih); padding: 35px 25px; border-radius: var(--radius); text-align: center; transition: var(--transisi); box-shadow: 0 10px 30px rgba(0,0,0,0.04); border-top: 4px solid var(--aksen);}
-        .kotak-keunggulan:hover {transform: translateY(-8px); box-shadow: var(--bayangan);}
-        .ikon-keunggulan {width: 70px; height: 70px; border-radius: 50%; background: rgba(245,158,11,0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;}
-        .kotak-keunggulan h4 {font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--utama);}
-        .kotak-keunggulan p {font-size: 14px; color: var(--abu); line-height: 1.8;}
+        .banner .container {
+            max-width: 950px;
+        }
 
-        /* GALERI ARMADA PREMIUM */
-        .bagian-armada {padding: 80px 0;}
-        .grid-armada {display: grid; grid-template-columns: repeat(auto-fit, minmax(350px,1fr)); gap: 30px;}
-        .kotak-armada {border-radius: var(--radius); overflow: hidden; background: var(--putih); box-shadow: var(--bayangan); transition: var(--transisi);}
-        .kotak-armada:hover {transform: translateY(-10px);}
-        .foto-armada {width: 100%; height: 240px; object-fit: cover; transition: var(--transisi);}
-        .kotak-armada:hover .foto-armada {transform: scale(1.05);}
-        .info-armada {padding: 25px;}
-        .info-armada h4 {font-size: 19px; font-weight: 700; color: var(--utama); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;}
-        .info-armada h4 span {color: var(--aksen); font-size: 16px;}
-        .spesifikasi {display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0;}
-        .tag-spesifikasi {background: var(--abu-terang); padding: 6px 12px; border-radius: 8px; font-size: 12px; font-weight: 500; color: var(--sekunder);}
-        .info-armada p {font-size: 14px; color: var(--abu); margin-bottom: 15px;}
+        .banner h2 {
+            font-size: 66px;
+            font-weight: 900;
+            margin-bottom: 22px;
+            line-height: 1.15;
+            letter-spacing: -1px;
+        }
+
+        .banner p {
+            font-size: 21px;
+            margin-bottom: 45px;
+            opacity: 0.96;
+            font-weight: 300;
+        }
+
+        .tombol-banner {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        /* JUDUL BAGIAN */
+        .judul-bagian {
+            text-align: center;
+            margin: 90px 0 55px;
+        }
+
+        .judul-bagian h3 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .judul-bagian h3 span {
+            color: var(--utama);
+        }
+
+        .garis-pemisah {
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--utama), var(--aksen));
+            margin: 0 auto 25px;
+            border-radius: 50px;
+        }
+
+        /* KOTAK CARI RUTE */
+        .cari-rute {
+            margin-top: -110px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .kotak-cari {
+            background: var(--terang);
+            padding: 45px;
+            border-radius: var(--radius);
+            box-shadow: var(--bayangan);
+            border-top: 5px solid var(--utama);
+        }
+
+        .grid-cari {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .grup-cari label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--gelap);
+        }
+
+        .grup-cari input,
+        .grup-cari select {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #DEE2E6;
+            border-radius: 15px;
+            font-size: 15px;
+            transition: var(--transisi);
+        }
+
+        .grup-cari input:focus,
+        .grup-cari select:focus {
+            outline: none;
+            border-color: var(--utama);
+            box-shadow: 0 0 0 6px rgba(255, 138, 0, 0.1);
+        }
+
+        /* KEUNGGULAN */
+        .keunggulan {
+            background: var(--abu-muda);
+            padding: 90px 0;
+            margin-top: 80px;
+        }
+
+        .grid-unggul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 35px;
+        }
+
+        .kartu-unggul {
+            background: var(--terang);
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--bayangan);
+            transition: var(--transisi);
+            border: 1px solid rgba(255, 138, 0, 0.08);
+        }
+
+        .kartu-unggul:hover {
+            transform: translateY(-15px);
+            border-color: var(--utama);
+        }
+
+        .ikon-unggul {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255, 138, 0, 0.12), rgba(255, 193, 7, 0.12));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            font-size: 35px;
+            color: var(--utama);
+        }
+
+        .kartu-unggul h4 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
 
         /* RUTE & TARIF */
-        .bagian-rute {padding: 80px 0; background: var(--sekunder); color: var(--putih);}
-        .bagian-rute .judul-bagian h2 {color: var(--putih);}
-        .bagian-rute .judul-bagian p {color: rgba(255,255,255,0.7);}
-        .tab-rute {display: flex; justify-content: center; gap: 12px; margin-bottom: 40px; flex-wrap: wrap;}
-        .btn-tab {padding: 12px 28px; border: 2px solid rgba(245,158,11,0.5); background: transparent; color: var(--putih); border-radius: 50px; font-weight: 600; cursor: pointer; transition: var(--transisi); font-size: 14px;}
-        .btn-tab.aktif {background: var(--aksen); border-color: var(--aksen); color: var(--utama);}
-        .grid-rute {display: grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap: 25px;}
-        .kotak-rute {background: rgba(255,255,255,0.05); padding: 28px; border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.1); transition: var(--transisi); position: relative; overflow: hidden;}
-        .kotak-rute::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--aksen);}
-        .kotak-rute:hover {transform: translateY(-5px); background: rgba(255,255,255,0.08);}
-        .rute-nama {font-size: 18px; font-weight: 700; margin-bottom: 8px;}
-        .rute-harga {font-size: 24px; font-weight: 800; color: var(--aksen); margin-bottom: 12px;}
-        .rute-keterangan {font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 20px;}
-        .kotak-rute .btn-utama {width: 100%; justify-content: center;}
+        .rute-lengkap {
+            padding: 90px 0;
+        }
 
-        /* LAYANAN TAMBAHAN */
-        .bagian-layanan {padding: 80px 0;}
-        .grid-layanan {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 25px;}
-        .kotak-layanan {display: flex; gap: 18px; padding: 25px; border-radius: var(--radius); transition: var(--transisi); border: 1px solid var(--abu-terang);}
-        .kotak-layanan:hover {border-color: var(--aksen); background: rgba(245,158,11,0.02); transform: translateX(5px);}
-        .ikon-layanan {font-size: 28px; color: var(--aksen); flex-shrink: 0; margin-top: 5px;}
-        .isi-layanan h4 {font-size: 16px; font-weight: 700; margin-bottom: 6px;}
-        .isi-layanan p {font-size: 13px; color: var(--abu);}
+        .tab-rute {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
 
-        /* FORM PEMESANAN */
-        .bagian-form {padding: 80px 0; background: var(--abu-terang);}
-        .bungkus-form {max-width: 800px; margin: 0 auto; background: var(--putih); padding: 45px; border-radius: var(--radius); box-shadow: var(--bayangan); border-top: 5px solid var(--aksen);}
-        .form-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 20px;}
-        .form-grup {margin-bottom: 20px;}
-        .form-grup.full {grid-column: 1 / -1;}
-        .form-grup label {display: block; margin-bottom: 8px; font-weight: 600; font-size: 14px; color: var(--sekunder);}
-        .form-grup input, .form-grup select, .form-grup textarea {width: 100%; padding: 14px; border: 1px solid #CBD5E1; border-radius: 12px; font-size: 14px; transition: var(--transisi); background: var(--abu-terang);}
-        .form-grup input:focus, .form-grup select:focus, .form-grup textarea:focus {outline: none; border-color: var(--aksen); background: var(--putih); box-shadow: 0 0 0 4px rgba(245,158,11,0.1);}
-        .tombol-kirim {width: 100%; margin-top: 10px;}
+        .btn-tab {
+            padding: 15px 32px;
+            border: none;
+            background: var(--abu-muda);
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transisi);
+            font-size: 14px;
+        }
 
-        /* TESTIMONI */
-        .bagian-testi {padding: 80px 0;}
-        .grid-testi {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 25px;}
-        .kotak-testi {background: var(--putih); padding: 30px; border-radius: var(--radius); box-shadow: 0 10px 30px rgba(0,0,0,0.04); border-left: 4px solid var(--aksen);}
-        .bintang {color: var(--aksen); margin-bottom: 15px; font-size: 18px;}
-        .kotak-testi p {font-style: italic; color: var(--sekunder); margin-bottom: 20px; font-size: 14px;}
-        .penulis-testi {display: flex; align-items: center; gap: 12px;}
-        .foto-penulis {width: 45px; height: 45px; border-radius: 50%; background: var(--abu-terang); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: var(--aksen);}
-        .nama-penulis h5 {font-size: 15px; font-weight: 700;}
-        .nama-penulis span {font-size: 12px; color: var(--abu);}
+        .btn-tab.aktif {
+            background: linear-gradient(135deg, var(--utama), var(--utama-gelap));
+            color: var(--terang);
+            box-shadow: 0 8px 25px rgba(255, 138, 0, 0.3);
+        }
+
+        .grid-rute {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 28px;
+        }
+
+        .kartu-rute {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--bayangan);
+            background: var(--terang);
+            transition: var(--transisi);
+            border: 1px solid rgba(255, 138, 0, 0.08);
+        }
+
+        .kartu-rute:hover {
+            transform: translateY(-12px);
+            border-color: var(--utama);
+        }
+
+        .kepala-rute {
+            background: linear-gradient(135deg, var(--utama), var(--utama-gelap));
+            color: var(--terang);
+            padding: 28px;
+            text-align: center;
+        }
+
+        .isi-rute {
+            padding: 32px;
+        }
+
+        .harga-rute {
+            font-size: 32px;
+            font-weight: 900;
+            color: var(--utama);
+            margin-bottom: 10px;
+        }
+
+        .jadwal {
+            font-size: 14px;
+            color: var(--abu);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            justify-content: center;
+        }
+
+        .fasilitas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+            justify-content: center;
+        }
+
+        .tag-fasilitas {
+            background: rgba(255, 138, 0, 0.1);
+            color: var(--utama);
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .kartu-rute .btn {
+            width: 100%;
+            font-size: 14px;
+            padding: 14px;
+        }
+
+        /* ARMADA MOBIL */
+        .armada {
+            background: var(--abu-muda);
+            padding: 90px 0;
+        }
+
+        .grid-armada {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+
+        .kartu-armada {
+            background: var(--terang);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--bayangan);
+            text-align: center;
+            transition: var(--transisi);
+            border: 1px solid rgba(255, 138, 0, 0.08);
+        }
+
+        .kartu-armada:hover {
+            transform: scale(1.06);
+            border-color: var(--utama);
+        }
+
+        .gambar-armada {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            transition: 0.5s;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .kartu-armada:hover .gambar-armada {
+            transform: scale(1.1);
+        }
+
+        .isi-armada {
+            padding: 28px;
+        }
+
+        .isi-armada h4 {
+            font-size: 19px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .spesifikasi {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .tag-spesifikasi {
+            background: rgba(255, 193, 7, 0.15);
+            color: var(--aksen);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* PAKET WISATA */
+        .wisata {
+            padding: 90px 0;
+        }
+
+        .grid-wisata {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 32px;
+        }
+
+        .kartu-wisata {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--bayangan);
+            background: var(--terang);
+            transition: var(--transisi);
+            border: 1px solid rgba(255, 138, 0, 0.08);
+        }
+
+        .kartu-wisata:hover {
+            transform: translateY(-15px);
+            border-color: var(--utama);
+        }
+
+        .gambar-wisata {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            transition: 0.6s;
+        }
+
+        .kartu-wisata:hover .gambar-wisata {
+            transform: scale(1.12);
+        }
+
+        .isi-wisata {
+            padding: 32px;
+        }
+
+        .isi-wisata h4 {
+            font-size: 21px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .lokasi {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--utama);
+            font-size: 15px;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .harga-wisata {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--aksen);
+            margin-bottom: 22px;
+        }
 
         /* KONTAK & FOOTER */
-        .bagian-kontak {padding: 80px 0; background: var(--sekunder); color: var(--putih);}
-        .grid-kontak {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 30px; text-align: center;}
-        .kotak-kontak {padding: 30px; border-radius: var(--radius); background: rgba(255,255,255,0.05); transition: var(--transisi);}
-        .kotak-kontak:hover {background: rgba(245,158,11,0.1); transform: translateY(-5px);}
-        .kotak-kontak h4 {margin: 15px 0 8px; font-size: 17px;}
-        .kotak-kontak p {font-size: 14px; color: rgba(255,255,255,0.7);}
-        footer {background: var(--utama); color: rgba(255,255,255,0.6); padding: 30px 0; text-align: center; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1);}
+        .kontak {
+            background: var(--gelap);
+            color: var(--terang);
+            padding: 80px 0 35px;
+        }
+
+        .info-kontak {
+            text-align: center;
+            margin-bottom: 50px;
+            line-height: 2;
+        }
+
+        .info-kontak h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--aksen);
+        }
+
+        .info-kontak p {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .info-kontak a {
+            color: var(--aksen);
+            font-weight: 700;
+        }
+
+        .bawah-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.7;
+        }
 
         /* TOMBOL WA MELAYANG */
-        .wa-float {position: fixed; bottom: 30px; right: 30px; z-index: 9999;}
-        .wa-float a {background: #25D366; color: var(--putih); padding: 14px 22px; border-radius: 50px; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 30px rgba(37,211,102,0.4); display: flex; align-items: center; gap: 8px; transition: var(--transisi); white-space: nowrap;}
-        .wa-float a:hover {transform: scale(1.1); background: #128C7E;}
+        .wa-float {
+            position: fixed;
+            bottom: 35px;
+            right: 35px;
+            z-index: 9999;
+        }
 
-        /* RESPONSIF */
-        @media(max-width:768px){
-            .menu-nav {display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--utama); flex-direction: column; padding: 25px; gap: 18px; border-bottom: 1px solid rgba(255,255,255,0.1);}
-            .menu-nav.tampil {display: flex;}
-            .menu-hp {display: block;}
-            .isi-banner h1 {font-size: 34px;}
-            .judul-bagian h2 {font-size: 26px;}
-            .form-grid {grid-template-columns: 1fr;}
-            .grid-armada, .grid-rute {grid-template-columns: 1fr;}
-            .tombol-banner {flex-direction: column; align-items: center;}
-            .wa-float {right: 15px; bottom: 15px;}
-            .wa-float a {font-size: 13px; padding: 12px 16px;}
+        .wa-float a {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 16px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
+            white-space: nowrap;
+            font-size: 15px;
+        }
+
+        .wa-float a:hover {
+            transform: scale(1.08);
+        }
+
+        /* RESPONSIF HP */
+        @media(max-width:768px) {
+            .menu-utama {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 35px;
+                gap: 25px;
+                text-align: center;
+                box-shadow: var(--bayangan);
+            }
+
+            .menu-utama.tampil {
+                display: flex;
+            }
+
+            .menu-hp {
+                display: block;
+            }
+
+            .banner h2 {
+                font-size: 42px;
+            }
+
+            .grid-cari,
+            .grid-rute,
+            .grid-armada,
+            .grid-wisata {
+                grid-template-columns: 1fr;
+            }
+
+            .wa-float {
+                right: 20px;
+                bottom: 20px;
+            }
+
+            .wa-float a {
+                font-size: 14px;
+                padding: 14px 22px;
+            }
+
+            .top-bar .container {
+                justify-content: center;
+            }
         }
     </style>
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9WHVPCV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- NAVIGASI -->
-<nav>
-    <div class="container nav-bungkus">
-        <a href="#" class="logo">
-            <img src="logo-elnisya.png" alt="Logo Elnisya Trans" class="logo-img">
-            <div class="logo-teks">
-                <div class="logo-nama">ELNISYA TRANS</div>
-                <div class="logo-tag">Premium Travel & Rental</div>
-            </div>
-        </a>
-        <ul class="menu-nav" id="menuUtama">
-            <li><a href="#beranda" class="aktif">Beranda</a></li>
-            <li><a href="#keunggulan">Keunggulan</a></li>
-            <li><a href="#armada">Armada</a></li>
-            <li><a href="#rute">Rute & Tarif</a></li>
-            <li><a href="#layanan">Layanan</a></li>
-            <li><a href="#booking" class="btn-kecil" style="background:var(--aksen); color:var(--utama);">Pesan Sekarang</a></li>
-        </ul>
-        <div class="menu-hp" onclick="bukaMenu()">☰</div>
-    </div>
-</nav>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9WHVPCV" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<!-- BANNER UTAMA -->
-<section class="bagian-banner" id="beranda">
-    <div class="container">
-        <div class="isi-banner">
-            <h1>Perjalanan <span>Nyaman & Terpercaya</span> Bersama Elnisya Trans</h1>
-            <p>Layanan travel premium Pangandaran & Tasikmalaya ke seluruh Jawa Barat, Jabodetabek, dan Bandara Soetta. Jemput antar alamat, armada terawat, dan harga transparan.</p>
+    <!-- BAR ATAS -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-kiri">
+                <span class="badge-resmi"><i class="fas fa-check-circle"></i> USAHA RESMI & TERPERCAYA</span>
+                <span>Pemilik: <span class="nama-pemilik">MUHAMMAD ILHAM</span></span>
+            </div>
+            <div class="top-kanan">
+                <span><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6282280314654"
+                        target="_blank">0822-8031-4654</a></span>
+                <span><i class="fas fa-map-marker-alt"></i> Kantor: Cipangasih RT27 RW10, Desa Kertaharja, Kecamatan
+                    Cimerak, Kabupaten Pangandaran</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <div class="container nav-bungkus">
+            <a href="#" class="logo">
+                <img src="./logo-elnisya.png" alt="Logo ELNISYA TRANS" class="logo-img">
+                <div class="logo-teks">
+                    <h1>ELNISYA TRANS</h1>
+                    <p>Premium Travel & Wisata Indonesia</p>
+                </div>
+            </a>
+            <ul class="menu-utama" id="menuNav">
+                <li><a href="#beranda" class="aktif">Beranda</a></li>
+                <li><a href="#rute">Rute & Tarif</a></li>
+                <li><a href="#armada">Armada Mobil</a></li>
+                <li><a href="#wisata">Paket Wisata</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="https://wa.me/6282280314654?text=Halo%20ELNISYA%20TRANS%2C%20saya%20ingin%20memesan%20perjalanan.%20Mohon%20info%20selengkapnya."
+                        target="_blank" class="btn btn-utama">Pesan Sekarang</a></li>
+            </ul>
+            <div class="menu-hp" onclick="bukaMenu()">☰</div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner" id="beranda">
+        <div class="container">
+            <h2>PERJALANAN NYAMAN & AMAN<br>BERSAMA ELNISYA TRANS</h2>
+            <p>Melayani rute Pangandaran & Tasikmalaya ke seluruh Jabodetabek, Bandung, Bandara Soetta serta paket
+                wisata terbaik ke Pangandaran, Citumang, Green Canyon, Bromo dan Jogjakarta. Armada mobil terbaru,
+                layanan door to door eksklusif.</p>
             <div class="tombol-banner">
-                <a href="#booking" class="btn-utama">📅 Pesan Tiket Sekarang</a>
-                <a href="#rute" class="btn-kedua">💰 Lihat Harga</a>
+                <a href="#rute" class="btn btn-putih"><i class="fas fa-route"></i> Lihat Semua Rute</a>
+                <a href="https://wa.me/6282280314654?text=Halo%20ELNISYA%20TRANS%2C%20saya%20ingin%20tanya%20paket%20wisata.%20Terima%20kasih."
+                    target="_blank" class="btn btn-aksen"><i class="fas fa-mountain"></i> Paket Wisata</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- KEUNGGULAN PREMIUM -->
-<section class="bagian-keunggulan" id="keunggulan">
-    <div class="container">
-        <div class="judul-bagian">
-            <div class="label-bagian">MENGAPA KAMI PILIHAN TERBAIK</div>
-            <h2>Keunggulan Layanan Elnisya Trans</h2>
-            <p>Kami mengutamakan kenyamanan, keamanan, dan kepuasan setiap penumpang</p>
-        </div>
-        <div class="grid-keunggulan">
-            <div class="kotak-keunggulan">
-                <div class="ikon-keunggulan">🚪</div>
-                <h4>Layanan Door to Door</h4>
-                <p>Jemput dan antar langsung di depan alamat tujuan tanpa perlu repot ke terminal.</p>
-            </div>
-            <div class="kotak-keunggulan">
-                <div class="ikon-keunggulan">🚐</div>
-                <h4>Armada Premium</h4>
-                <p>Kendaraan baru, servis rutin mingguan, AC dingin, dan interior bersih.</p>
-            </div>
-            <div class="kotak-keunggulan">
-                <div class="ikon-keunggulan">👨‍✈️</div>
-                <h4>Sopir Profesional</h4>
-                <p>Berpengalaman, ramah, teliti, dan mengutamakan keselamatan di setiap perjalanan.</p>
-            </div>
-            <div class="kotak-keunggulan">
-                <div class="ikon-keunggulan">💰</div>
-                <h4>Harga Terjamin</h4>
-                <p>Tarif resmi transparan, tidak ada biaya tersembunyi sama sekali.</p>
-            </div>
-            <div class="kotak-keunggulan">
-                <div class="ikon-keunggulan">⏰</div>
-                <h4>Tepat Waktu</h4>
-                <p>Jadwal berangkat teratur setiap hari, siap menyesuaikan kebutuhan Anda.</p>
-            </div>
-            <div class="kotak-keunggulan">
-                <div class="ikon-keunggulan">🛡️</div>
-                <h4>Keamanan Terjamin</h4>
-                <p>Semua perjalanan dilindungi asuransi standar keselamatan.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ARMADA KAMI -->
-<section class="bagian-armada" id="armada">
-    <div class="container">
-        <div class="judul-bagian">
-            <div class="label-bagian">ARMADA KAMI</div>
-            <h2>Koleksi Kendaraan Premium</h2>
-            <p>Siap mengantar Anda dengan kenyamanan maksimal</p>
-        </div>
-        <div class="grid-armada">
-            <div class="kotak-armada">
-                <img src="armada-avanza.jpg" alt="Toyota Avanza Elnisya Trans" class="foto-armada" loading="lazy">
-                <div class="info-armada">
-                    <h4><span>🚐</span> Toyota Avanza</h4>
-                    <div class="spesifikasi">
-                        <span class="tag-spesifikasi">6 Kursi</span>
-                        <span class="tag-spesifikasi">AC Dingin</span>
-                        <span class="tag-spesifikasi">Bagasi Luas</span>
-                    </div>
-                    <p>Cocok untuk perjalanan keluarga atau rombongan kecil, nyaman dan stabil.</p>
-                    <a href="#booking" class="btn-utama btn-kecil">Pilih Armada Ini</a>
-                </div>
-            </div>
-            <div class="kotak-armada">
-                <img src="armada-innova.jpg" alt="Toyota Innova Reborn Elnisya Trans" class="foto-armada" loading="lazy">
-                <div class="info-armada">
-                    <h4><span>🚙</span> Toyota Innova Reborn</h4>
-                    <div class="spesifikasi">
-                        <span class="tag-spesifikasi">7 Kursi</span>
-                        <span class="tag-spesifikasi">Interior Mewah</span>
-                        <span class="tag-spesifikasi">Suspensi Empuk</span>
-                    </div>
-                    <p>Perjalanan eksekutif dengan kenyamanan kelas atas.</p>
-                    <a href="#booking" class="btn-utama btn-kecil">Pilih Armada Ini</a>
-                </div>
-            </div>
-            <div class="kotak-armada">
-                <img src="armada-elf.jpg" alt="Isuzu Elf Pariwisata Elnisya Trans" class="foto-armada" loading="lazy">
-                <div class="info-armada">
-                    <h4><span>🚌</span> Elf Pariwisata</h4>
-                    <div class="spesifikasi">
-                        <span class="tag-spesifikasi">12-15 Kursi</span>
-                        <span class="tag-spesifikasi">Legroom Luas</span>
-                        <span class="tag-spesifikasi">Hiburan</span>
-                    </div>
-                    <p>Ideal untuk wisata, ziarah, atau rombongan besar.</p>
-                    <a href="#booking" class="btn-utama btn-kecil">Pilih Armada Ini</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- RUTE & TARIF -->
-<section class="bagian-rute" id="rute">
-    <div class="container">
-        <div class="judul-bagian">
-            <div class="label-bagian">TARIF RESMI</div>
-            <h2>Rute & Harga Tiket</h2>
-            <p>Semua harga sudah termasuk layanan jemput antar alamat</p>
-        </div>
-        <div class="tab-rute">
-            <button class="btn-tab aktif" onclick="tampilRute('pangandaran')">Dari/Ke Pangandaran</button>
-            <button class="btn-tab" onclick="tampilRute('tasik')">Dari/Ke Tasikmalaya</button>
-        </div>
-        <div class="grid-rute" id="rutePangandaran">
-            <div class="kotak-rute">
-                <div class="rute-nama">Pangandaran ↔ Jakarta</div>
-                <div class="rute-harga">Rp 350.000,- / Orang</div>
-                <div class="rute-keterangan">Layanan Door to Door</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Pangandaran%20%E2%86%94%20Jakarta" class="btn-utama">Pesan Sekarang</a>
-            </div>
-            <div class="kotak-rute">
-                <div class="rute-nama">Pangandaran ↔ Bandung</div>
-                <div class="rute-harga">Rp 225.000,- / Orang</div>
-                <div class="rute-keterangan">Layanan Door to Door</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Pangandaran%20%E2%86%94%20Bandung" class="btn-utama">Pesan Sekarang</a>
-            </div>
-            <div class="kotak-rute">
-                <div class="rute-nama">Pangandaran ↔ Bogor/Depok</div>
-                <div class="rute-harga">Rp 350.000 - 400.000,- / Orang</div>
-                <div class="rute-keterangan">Sesuai lokasi tujuan</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Pangandaran%20%E2%86%94%20Bogor/Depok" class="btn-utama">Pesan Sekarang</a>
-            </div>
-            <div class="kotak-rute">
-                <div class="rute-nama">Pangandaran ↔ Bandara Soetta</div>
-                <div class="rute-harga">Rp 350.000,- / Orang</div>
-                <div class="rute-keterangan">Antar/Jemput Terminal Langsung</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Pangandaran%20%E2%86%94%20Bandara%20Soetta" class="btn-utama">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="grid-rute" id="ruteTasik" style="display:none;">
-            <div class="kotak-rute">
-                <div class="rute-nama">Tasikmalaya ↔ Jakarta</div>
-                <div class="rute-harga">Rp 350.000,- / Orang</div>
-                <div class="rute-keterangan">Layanan Door to Door</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Tasikmalaya%20%E2%86%94%20Jakarta" class="btn-utama">Pesan Sekarang</a>
-            </div>
-            <div class="kotak-rute">
-                <div class="rute-nama">Tasikmalaya ↔ Bandung</div>
-                <div class="rute-harga">Rp 225.000,- / Orang</div>
-                <div class="rute-keterangan">Layanan Door to Door</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Tasikmalaya%20%E2%86%94%20Bandung" class="btn-utama">Pesan Sekarang</a>
-            </div>
-            <div class="kotak-rute">
-                <div class="rute-nama">Tasikmalaya ↔ Bekasi/Tangerang</div>
-                <div class="rute-harga">Rp 350.000,- / Orang</div>
-                <div class="rute-keterangan">Layanan Door to Door</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Tasikmalaya%20%E2%86%94%20Bekasi/Tangerang" class="btn-utama">Pesan Sekarang</a>
-            </div>
-            <div class="kotak-rute">
-                <div class="rute-nama">Tasikmalaya ↔ Serang</div>
-                <div class="rute-harga">Rp 550.000,- / Orang</div>
-                <div class="rute-keterangan">Layanan Door to Door</div>
-                <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%2C%20saya%20ingin%20pesan%20rute%20Tasikmalaya%20%E2%86%94%20Serang" class="btn-utama">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- LAYANAN TAMBAHAN -->
-<section class="bagian-layanan" id="layanan">
-    <div class="container">
-        <div class="judul-bagian">
-            <div class="label-bagian">JASA LAINNYA</div>
-            <h2>Layanan Tambahan Elnisya Trans</h2>
-            <p>Selain travel reguler, kami siap memenuhi kebutuhan perjalanan khusus Anda</p>
-        </div>
-        <div class="grid-layanan">
-            <div class="kotak-layanan">
-                <div class="ikon-layanan">🚗</div>
-                <div class="isi-layanan">
-                    <h4>Sewa Mobil Lepas Kunci</h4>
-                    <p>Berbagai jenis kendaraan untuk kebutuhan harian atau mingguan.</p>
-                </div>
-            </div>
-            <div class="kotak-layanan">
-                <div class="ikon-layanan">🏖️</div>
-                <div class="isi-layanan">
-                    <h4>Paket Wisata & Ziarah</h4>
-                    <p>Paket liburan pantai, gunung, hingga ziarah wali dengan jadwal fleksibel.</p>
-                </div>
-            </div>
-            <div class="kotak-layanan">
-                <div class="ikon-layanan">✈️</div>
-                <div class="isi-layanan">
-                    <h4>Antar Jemput Bandara</h4>
-                    <p>Layanan khusus keberangkatan dan kedatangan Bandara Soekarno-Hatta.</p>
-                </div>
-            </div>
-            <div class="kotak-layanan">
-                <div class="ikon-layanan">📦</div>
-                <div class="isi-layanan">
-                    <h4>Kirim Paket Kilat</h4>
-                    <p>Pengiriman dokumen atau barang penting sampai tujuan dengan aman dan cepat.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- TESTIMONI -->
-<section class="bagian-testi">
-    <div class="container">
-        <div class="judul-bagian">
-            <div class="label-bagian">TESTIMONI</div>
-            <h2>Kata Mereka yang Telah Percaya</h2>
-            <p>Ulasan asli dari penumpang Elnisya Trans</p>
-        </div>
-        <div class="grid-testi">
-            <div class="kotak-testi">
-                <div class="bintang">⭐⭐⭐⭐⭐</div>
-                <p>"Perjalanan Pangandaran ke Jakarta sangat nyaman, sopir ramah dan tepat waktu. Pasti pakai Elnisya Trans lagi!"</p>
-                <div class="penulis-testi">
-                    <div class="foto-penulis">A</div>
-                    <div class="nama-penulis">
-                        <h5>Andi Setiawan</h5>
-                        <span>Jakarta</span>
-                    </div>
-                </div>
-            </div>
-            <div class="kotak-testi">
-                <div class="bintang">⭐⭐⭐⭐⭐</div>
-                <p>"Harga terjangkau tapi pelayanan kelas atas. Armada bersih dan AC dingin. Sangat direkomendasikan!"</p>
-                <div class="penulis-testi">
-                    <div class="foto-penulis">S</div>
-                    <div class="nama-penulis">
-                        <h5>Siti Aminah</h5>
-                        <span>Tasikmalaya</span>
-                    </div>
-                </div>
-            </div>
-            <div class="kotak-testi">
-                <div class="bintang">⭐⭐⭐⭐⭐</div>
-                <p>"Pesan untuk rombongan wisata sangat terbantu, admin responsif dan jadwal sesuai kesepakatan."</p>
-                <div class="penulis-testi">
-                    <div class="foto-penulis">R</div>
-                    <div class="nama-penulis">
-                        <h5>Rudi Hermawan</h5>
-                        <span>Pangandaran</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FORM PEMESANAN -->
-<section class="bagian-form" id="booking">
-    <div class="container">
-        <div class="judul-bagian">
-            <div class="label-bagian">PESAN SEKARANG</div>
-            <h2>Formulir Pemesanan Tiket</h2>
-            <p>Isi data berikut, pesanan akan langsung terkirim ke WhatsApp resmi kami</p>
-        </div>
-        <div class="bungkus-form">
-            <form id="formPesan" onsubmit="kirimKeWA(event)">
-                <div class="form-grid">
-                    <div class="form-grup">
-                        <label>👫 Nama Lengkap</label>
-                        <input type="text" id="nama" placeholder="Sesuai KTP" required>
-                    </div>
-                    <div class="form-grup">
-                        <label>📱 Nomor WhatsApp</label>
-                        <input type="tel" id="hp" placeholder="08xx-xxxx-xxxx" required>
-                    </div>
-                    <div class="form-grup">
-                        <label>📍 Alamat Penjemputan</label>
-                        <input type="text" id="jemput" placeholder="Lengkap dengan patokan" required>
-                    </div>
-                    <div class="form-grup">
-                        <label>🚘 Alamat Tujuan</label>
-                        <input type="text" id="tujuan" placeholder="Lengkap dengan patokan" required>
-                    </div>
-                    <div class="form-grup">
-                        <label>🧾 Jumlah Penumpang</label>
-                        <select id="jumlah" required>
-                            <option value="">Pilih jumlah</option>
-                            <option>1 Orang</option>
-                            <option>2 Orang</option>
-                            <option>3 Orang</option>
-                            <option>4 Orang</option>
-                            <option>Lebih dari 4 orang</option>
+    <!-- CARI RUTE -->
+    <section class="cari-rute">
+        <div class="container">
+            <div class="kotak-cari">
+                <h3 style="text-align:center; margin-bottom:28px; font-weight:800;">🔍 Cari Perjalanan Anda</h3>
+                <div class="grid-cari">
+                    <div class="grup-cari">
+                        <label>Kota Asal</label>
+                        <select>
+                            <option>Pilih Kota Asal</option>
+                            <option>Pangandaran</option>
+                            <option>Tasikmalaya</option>
+                            <option>Jakarta</option>
+                            <option>Bandung</option>
+                            <option>Cirebon</option>
+                            <option>Majalengka</option>
+                            <option>Bekasi</option>
+                            <option>Depok</option>
+                            <option>Bogor</option>
+                            <option>Tangerang</option>
+                            <option>Bandara Soekarno-Hatta</option>
                         </select>
                     </div>
-                    <div class="form-grup">
-                        <label>📅 Tanggal Berangkat</label>
-                        <input type="date" id="tanggal" required>
+                    <div class="grup-cari">
+                        <label>Kota Tujuan</label>
+                        <select>
+                            <option>Pilih Kota Tujuan</option>
+                            <option>Jakarta</option>
+                            <option>Bandung</option>
+                            <option>Cirebon</option>
+                            <option>Majalengka</option>
+                            <option>Bekasi</option>
+                            <option>Depok</option>
+                            <option>Bogor</option>
+                            <option>Tangerang</option>
+                            <option>Bandara Soekarno-Hatta</option>
+                            <option>Pangandaran</option>
+                            <option>Tasikmalaya</option>
+                        </select>
                     </div>
-                    <div class="form-grup full">
-                        <label>📝 Catatan Tambahan</label>
-                        <textarea id="catatan" rows="3" placeholder="Contoh: Bawa koper besar, butuh kursi depan, dll."></textarea>
+                    <div class="grup-cari">
+                        <label>Tanggal Perjalanan</label>
+                        <input type="date">
+                    </div>
+                    <div class="grup-cari">
+                        <a href="https://wa.me/6282280314654?text=Halo%20ELNISYA%20TRANS%2C%20saya%20ingin%20cek%20jadwal%20dan%20ketersediaan%20tempat.%20Terima%20kasih."
+                            target="_blank" class="btn btn-utama" style="width:100%;"><i class="fas fa-search"></i> Cek
+                            Jadwal</a>
                     </div>
                 </div>
-                <button type="submit" class="btn-utama tombol-kirim">📩 KIRIM PESANAN KE WHATSAPP</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- KONTAK -->
-<section class="bagian-kontak">
-    <div class="container">
-        <div class="judul-bagian">
-            <div class="label-bagian">HUBUNGI KAMI</div>
-            <h2>Informasi Kontak Elnisya Trans</h2>
-        </div>
-        <div class="grid-kontak">
-            <div class="kotak-kontak">
-                <div style="font-size:30px;">📍</div>
-                <h4>Alamat Kantor</h4>
-                <p>Dusun Cipangasih Blok Batu Tagog RT 27 RW 10, Desa Kertaharja, Kec. Cimerak, Kab. Pangandaran</p>
-            </div>
-            <div class="kotak-kontak">
-                <div style="font-size:30px;">📞</div>
-                <h4>WhatsApp Resmi</h4>
-                <p><a href="https://wa.me/6282280314654" style="color:var(--aksen); font-weight:600;">0822-8031-4654</a></p>
-            </div>
-            <div class="kotak-kontak">
-                <div style="font-size:30px;">⏰</div>
-                <h4>Jam Layanan</h4>
-                <p>Setiap Hari<br>07.00 – 21.00 WIB</p>
             </div>
         </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="keunggulan">
+        <div class="container">
+            <div class="judul-bagian">
+                <h3>Keunggulan <span>ELNISYA TRANS</span></h3>
+                <div class="garis-pemisah"></div>
+            </div>
+            <div class="grid-unggul">
+                <div class="kartu-unggul">
+                    <div class="ikon-unggul"><i class="fas fa-car"></i></div>
+                    <h4>Armada Mobil Pribadi</h4>
+                    <p>Hanya menggunakan mobil penumpang terbaru, nyaman, bersih dan terawat rutin. Tidak ada bus besar.
+                    </p>
+                </div>
+                <div class="kartu-unggul">
+                    <div class="ikon-unggul"><i class="fas fa-home"></i></div>
+                    <h4>Layanan Door to Door</h4>
+                    <p>Jemput langsung di rumah/kantor, antar sampai depan pintu tujuan tanpa perlu ke terminal.</p>
+                </div>
+                <div class="kartu-unggul">
+                    <div class="ikon-unggul"><i class="fas fa-user-shield"></i></div>
+                    <h4>Sopir Profesional</h4>
+                    <p>Ramah, berpengalaman, dan selalu mengutamakan keselamatan serta kenyamanan penumpang.</p>
+                </div>
+                <div class="kartu-unggul">
+                    <div class="ikon-unggul"><i class="fas fa-tags"></i></div>
+                    <h4>Harga Transparan</h4>
+                    <p>Tarif resmi jelas tanpa biaya tersembunyi, promo khusus untuk rombongan tersedia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RUTE LENGKAP -->
+    <section class="rute-lengkap" id="rute">
+        <div class="container">
+            <div class="judul-bagian">
+                <h3>Rute & Tarif Resmi Terbaru</h3>
+                <div class="garis-pemisah"></div>
+            </div>
+            <div class="tab-rute">
+                <button class="btn-tab aktif" onclick="gantiTab('pangandaran')">📍 RUTE PANGANDARAN</button>
+                <button class="btn-tab" onclick="gantiTab('tasik')">📍 RUTE TASIKMALAYA</button>
+            </div>
+
+            <!-- RUTE PANGANDARAN -->
+            <div class="grid-rute" id="rutePangandaran">
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Jakarta</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 350.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore • Malam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Door to Door</span>
+                            <span class="tag-fasilitas">AC Dingin</span>
+                            <span class="tag-fasilitas">Air Mineral</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Jakarta.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Cirebon</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 350.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore • Malam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Door to Door</span>
+                            <span class="tag-fasilitas">AC Dingin</span>
+                            <span class="tag-fasilitas">Air Mineral</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Cirebon.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Majalengka</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 300.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore • Malam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Door to Door</span>
+                            <span class="tag-fasilitas">AC Dingin</span>
+                            <span class="tag-fasilitas">Air Mineral</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Majalengka.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Bandung</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 250.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Setiap 2 Jam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Jemput Antar</span>
+                            <span class="tag-fasilitas">Via Tol</span>
+                            <span class="tag-fasilitas">Bagasi Luas</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Bandung.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Bekasi</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 350.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Antar Alamat</span>
+                            <span class="tag-fasilitas">Tepat Waktu</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Bekasi.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Depok</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 350.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Jemput Antar</span>
+                            <span class="tag-fasilitas">Via Tol</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Depok.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Bogor</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 350.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Door to Door</span>
+                            <span class="tag-fasilitas">Bagasi Luas</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Bogor.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Pangandaran ↔ Tangerang</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 375.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Malam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Antar Langsung</span>
+                            <span class="tag-fasilitas">Via Tol Cipali</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Pangandaran%20ke%20Tangerang.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute"
+                        style="background:linear-gradient(135deg,var(--aksen),#FFB300); color:var(--gelap);">
+                        <h4>Pangandaran ↔ Bandara Soetta</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 400.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Sesuai Jadwal Penerbangan</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Layanan Khusus</span>
+                            <span class="tag-fasilitas">Boleh Bawa Barang Banyak</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20antar%20ke%20Bandara%20Soetta%20dari%20Pangandaran.%20Mohon%20info%20selengkapnya."
+                            target="_blank" class="btn btn-aksen">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RUTE TASIKMALAYA -->
+            <div class="grid-rute" id="ruteTasik" style="display:none;">
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Tasikmalaya ↔ Jakarta</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 325.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore • Malam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Door to Door</span>
+                            <span class="tag-fasilitas">AC Dingin</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Tasikmalaya%20ke%20Jakarta.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Tasikmalaya ↔ Bandung</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 225.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Setiap Jam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Jemput Antar</span>
+                            <span class="tag-fasilitas">Cepat & Nyaman</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Tasikmalaya%20ke%20Bandung.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Tasikmalaya ↔ Bekasi</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 300.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Antar Alamat</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Tasikmalaya%20ke%20Bekasi.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Tasikmalaya ↔ Depok</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 325.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Jemput Antar</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Tasikmalaya%20ke%20Depok.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Tasikmalaya ↔ Bogor</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 350.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Sore</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Door to Door</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Tasikmalaya%20ke%20Bogor.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute">
+                        <h4>Tasikmalaya ↔ Tangerang</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 350.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Pagi • Malam</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Antar Langsung</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20perjalanan%20Tasikmalaya%20ke%20Tangerang.%20Mohon%20info%20ketersediaan%20tempat."
+                            target="_blank" class="btn btn-utama">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="kartu-rute">
+                    <div class="kepala-rute"
+                        style="background:linear-gradient(135deg,var(--aksen),#FFB300); color:var(--gelap);">
+                        <h4>Tasikmalaya ↔ Bandara Soetta</h4>
+                    </div>
+                    <div class="isi-rute">
+                        <div class="harga-rute">Rp 375.000,-</div>
+                        <div class="jadwal"><i class="fas fa-clock"></i> Sesuai Penerbangan</div>
+                        <div class="fasilitas">
+                            <span class="tag-fasilitas">Layanan Khusus</span>
+                        </div>
+                        <a href="https://wa.me/6282280314654?text=Halo%2C%20saya%20ingin%20memesan%20antar%20ke%20Bandara%20Soetta%20dari%20Tasikmalaya.%20Mohon%20info%20selengkapnya."
+                            target="_blank" class="btn btn-aksen">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARMADA MOBIL -->
+    <section class="armada" id="armada">
+        <div class="container">
+            <div class="judul-bagian">
+                <h3>Armada Mobil <span>Premium Terbaru</span></h3>
+                <div class="garis-pemisah"></div>
+                <p>Semua kendaraan mobil penumpang pribadi yang nyaman, aman, dan terawat secara berkala</p>
+            </div>
+            <div class="grid-armada">
+                <div class="kartu-armada">
+                    <img src="avanza.jpg" alt="Toyota Avanza" class="gambar-armada" loading="lazy">
+                    <div class="isi-armada">
+                        <h4>Toyota Avanza</h4>
+                        <div class="spesifikasi">
+                            <span class="tag-spesifikasi">6 Kursi</span>
+                            <span class="tag-spesifikasi">AC Dingin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kartu-armada">
+                    <img src="xpander.jpg" alt="Mitsubishi Xpander" class="gambar-armada" loading="lazy">
+                    <div class="isi-armada">
+                        <h4>Mitsubishi Xpander</h4>
+                        <div class="spesifikasi">
+                            <span class="tag-spesifikasi">7 Kursi</span>
+                            <span class="tag-spesifikasi">Suspensi Nyaman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kartu-armada">
+                    <img src="innova.jpg" alt="Toyota Innova Reborn" class="gambar-armada" loading="lazy">
+                    <div class="isi-armada">
+                        <h4>Toyota Innova Reborn</h4>
+                        <div class="spesifikasi">
+                            <span class="tag-spesifikasi">Kelas Eksekutif</span>
+                            <span class="tag-spesifikasi">Kursi Luas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kartu-armada">
+                    <img src="luxio.jpg" alt="Daihatsu Luxio" class="gambar-armada" loading="lazy">
+                    <div class="isi-armada">
+                        <h4>Daihatsu Luxio</h4>
+                        <div class="spesifikasi">
+                            <span class="tag-spesifikasi">7 Kursi</span>
+                            <span class="tag-spesifikasi">Legroom Luas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kartu-armada">
+                    <img src="apv.jpg" alt="Suzuki APV" class="gambar-armada" loading="lazy">
+                    <div class="isi-armada">
+                        <h4>Suzuki APV</h4>
+                        <div class="spesifikasi">
+                            <span class="tag-spesifikasi">7 Kursi</span>
+                            <span class="tag-spesifikasi">Bagasi Besar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kartu-armada">
+                    <img src="terios.jpg" alt="Daihatsu Terios" class="gambar-armada" loading="lazy">
+                    <div class="isi-armada">
+                        <h4>Daihatsu Terios</h4>
+                        <div class="spesifikasi">
+                            <span class="tag-spesifikasi">7 Kursi</span>
+                            <span class="tag-spesifikasi">Perjalanan Stabil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAKET WISATA -->
+    <section class="wisata" id="wisata">
+        <div class="container">
+            <div class="judul-bagian">
+                <h3>Paket Wisata Lengkap</h3>
+                <div class="garis-pemisah"></div>
+            </div>
+            <div class="grid-wisata">
+                <div class="kartu-wisata">
+                    <img src="pantai-pangandaran.jpg" alt="Pantai Pangandaran" class="gambar-wisata" loading="lazy">
+                    <div class="isi-wisata">
+                        <h4>Pantai Pangandaran 2D1N</h4>
+                        <div class="lokasi"><i class="fas fa-map-marker-alt"></i> Pangandaran, Jawa Barat</div>
+                        <p>Kunjungi Pantai Barat & Timur, Cagar Alam, Penangkaran Penyu. Termasuk transportasi dan sopir
+                            berpengalaman.</p>
+                        <div class="harga-wisata">Mulai Rp 900.000,-/orang</div>
+                        <a href="https://wa.me/6282280314654?text=Info%20Paket%20Pangandaran" class="btn btn-aksen">Info
+                            Lengkap</a>
+                    </div>
+                </div>
+                <div class="kartu-wisata">
+                    <img src="citumang.jpg" alt="Citumang" class="gambar-wisata" loading="lazy">
+                    <div class="isi-wisata">
+                        <h4>Wisata Citumang</h4>
+                        <div class="lokasi"><i class="fas fa-map-marker-alt"></i> Parigi, Pangandaran</div>
+                        <p>Body rafting menyusuri sungai jernih, pemandangan alam indah, tiket masuk dan peralatan
+                            lengkap.</p>
+                        <div class="harga-wisata">Mulai Rp 750.000,-/orang</div>
+                        <a href="https://wa.me/6282280314654?text=Info%20Paket%20Citumang" class="btn btn-aksen">Info
+                            Lengkap</a>
+                    </div>
+                </div>
+                <div class="kartu-wisata">
+                    <img src="green-canyon.jpg" alt="Green Canyon" class="gambar-wisata" loading="lazy">
+                    <div class="isi-wisata">
+                        <h4>Green Canyon Cijulang</h4>
+                        <div class="lokasi"><i class="fas fa-map-marker-alt"></i> Cijulang, Pangandaran</div>
+                        <p>Menyusuri sungai hijau alami, gua karst, pemandangan hutan asri. Termasuk sewa perahu dan
+                            tiket masuk.</p>
+                        <div class="harga-wisata">Mulai Rp 800.000,-/orang</div>
+                        <a href="https://wa.me/6282280314654?text=Info%20Paket%20Green%20Canyon"
+                            class="btn btn-aksen">Info Lengkap</a>
+                    </div>
+                </div>
+                <div class="kartu-wisata">
+                    <img src="bromo.jpg" alt="Gunung Bromo" class="gambar-wisata" loading="lazy">
+                    <div class="isi-wisata">
+                        <h4>Gunung Bromo 3D2N</h4>
+                        <div class="lokasi"><i class="fas fa-map-marker-alt"></i> Jawa Timur</div>
+                        <p>Melihat matahari terbit di puncak Bromo, padang pasir, kawah. Termasuk transportasi dan
+                            penginapan.</p>
+                        <div class="harga-wisata">Mulai Rp 1.800.000,-/orang</div>
+                        <a href="https://wa.me/6282280314654?text=Info%20Paket%20Bromo" class="btn btn-aksen">Info
+                            Lengkap</a>
+                    </div>
+                </div>
+                <div class="kartu-wisata">
+                    <img src="jogja.jpg" alt="Jogjakarta" class="gambar-wisata" loading="lazy">
+                    <div class="isi-wisata">
+                        <h4>Jogjakarta Istimewa 3D2N</h4>
+                        <div class="lokasi"><i class="fas fa-map-marker-alt"></i> Daerah Istimewa Yogyakarta</div>
+                        <p>Kunjungi Candi Borobudur, Prambanan, Malioboro, Keraton. Termasuk transportasi dan
+                            rekomendasi tempat makan.</p>
+                        <div class="harga-wisata">Mulai Rp 1.500.000,-/orang</div>
+                        <a href="https://wa.me/6282280314654?text=Info%20Paket%20Jogjakarta" class="btn btn-aksen">Info
+                            Lengkap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & FOOTER -->
+    <section class="kontak" id="kontak">
+        <div class="container">
+            <div class="info-kontak">
+                <h4>Hubungi Kami Sekarang</h4>
+                <p><strong>ELNISYA TRANS </strong></p>
+                <p>Pemilik Usaha: <strong>MUHAMMAD ILHAM</strong></p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/6282280314654">0822-8031-4654</a>
+                </p>
+                <p><i class="fas fa-envelope"></i> Email: info@elnisyatrans.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Alamat Kantor: Cipangasih Blok Batu Tagog, Desa Kertaharja,
+                    Kecamatan Cimerak, Kabupaten Pangandaran 46395</p>
+                <p><i class="fas fa-clock"></i> Jam Operasional: Setiap Hari 07.00 - 22.00 WIB</p>
+            </div>
+            <div class="bawah-footer">
+                <p>© 2026 ELNISYA TRANS - MUHAMMAD ILHAM. Semua Hak Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOMBOL PESAN MELAYANG ELNISYA TRANS -->
+    <div class="wa-float">
+        <a href="https://wa.me/6282280314654?text=Halo%20ELNISYA%20TRANS%2C%20saya%20ingin%20memesan%20perjalanan%20atau%20tanya%20info%20rute.%20Terima%20kasih."
+            target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            HUBUNGI KAMI
+        </a>
     </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <p>Copyright © 2026 <strong>ELNISYA TRANS</strong> - Premium Travel & Sewa Mobil. Semua Hak Dilindungi.</p>
-    </div>
-</footer>
+    <style>
+        /* GAYA TOMBOL MELAYANG BARU */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99999;
+            animation: gerakRingan 2s infinite ease-in-out;
+        }
 
-<!-- TOMBOL WA MELAYANG -->
-<div class="wa-float">
-    <a href="https://wa.me/6282280314654?text=Halo%20Elnisya%20Trans%20%F0%9F%91%8B%0ASaya%20mau%20tanya%20seputar%20jadwal%20atau%20pesan%20tiket%20travel.%20Terima%20kasih." target="_blank">
-        💬 Tanya & Pesan Tiket
-    </a>
-</div>
+        .wa-float a {
+            background: linear-gradient(135deg, #FF8A00, #E67A00);
+            color: white;
+            padding: 15px 24px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 30px rgba(255, 138, 0, 0.4);
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
 
-<script>
-function bukaMenu(){document.getElementById('menuUtama').classList.toggle('tampil');}
-function tampilRute(jenis){
-    document.querySelectorAll('.btn-tab').forEach(b=>b.classList.remove('aktif'));
-    event.target.classList.add('aktif');
-    document.getElementById('rutePangandaran').style.display = jenis==='pangandaran'?'grid':'none';
-    document.getElementById('ruteTasik').style.display = jenis==='tasik'?'grid':'none';
-}
-function kirimKeWA(e){
-    e.preventDefault();
-    const pesan = `*FORM PEMESANAN ELNISYA TRANS*
-━━━━━━━━━━━━━━━━━━━━━━━━━━
-👫 *Nama* : ${document.getElementById('nama').value}
-📱 *No HP* : ${document.getElementById('hp').value}
-📍 *Jemput* : ${document.getElementById('jemput').value}
-🚘 *Tujuan* : ${document.getElementById('tujuan').value}
-🧾 *Jumlah* : ${document.getElementById('jumlah').value}
-📅 *Tanggal* : ${document.getElementById('tanggal').value}
-📝 *Catatan* : ${document.getElementById('catatan').value || '-'}
-━━━━━━━━━━━━━━━━━━━━━━━━━━
-Terima kasih telah memilih Elnisya Trans 🙏`;
-    window.open(`https://wa.me/6282280314654?text=${encodeURIComponent(pesan)}`);
-}
-</script>
+        .wa-float a:hover {
+            transform: scale(1.08) translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 138, 0, 0.5);
+            background: linear-gradient(135deg, #FF9500, #FFC107);
+        }
+
+        @keyframes gerakRingan {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* SESUAIKAN UNTUK HP */
+        @media(max-width:768px) {
+            .wa-float {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .wa-float a {
+                font-size: 14px;
+                padding: 12px 18px;
+            }
+        }
+    </style>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function bukaMenu() {
+            const menu = document.getElementById('menuNav');
+            menu.classList.toggle('tampil');
+        }
+        function gantiTab(kota) {
+            const tabPangandaran = document.getElementById('rutePangandaran');
+            const tabTasik = document.getElementById('ruteTasik');
+            const tombol = document.querySelectorAll('.btn-tab');
+            tombol.forEach(btn => btn.classList.remove('aktif'));
+            event.target.classList.add('aktif');
+            if (kota == 'pangandaran') {
+                tabPangandaran.style.display = 'grid';
+                tabTasik.style.display = 'none';
+            } else {
+                tabPangandaran.style.display = 'none';
+                tabTasik.style.display = 'grid';
+            }
+        }
+    </script>
 </body>
+
 </html>
